@@ -36,6 +36,16 @@ std::pair<int, int> collatz_read (std::istream& r);
  */
 int collatz_eval (int i, int j);
 
+// ------------
+// collatz_cycle_length
+// ------------
+
+/**
+ * @param i the number who's cycle length we want to calculate
+ * @return the cycle length of i
+ */
+int collatz_cycle_length (int i);
+
 // -------------
 // collatz_print
 // -------------

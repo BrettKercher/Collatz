@@ -36,6 +36,16 @@ std::pair<int, int> collatz_read (std::istream& r);
  */
 int collatz_eval (int i, int j);
 
+// ------------
+// collatz_cycle_length
+// ------------
+
+/**
+ * @param i the number who's cycle length we want to calculate
+ * @return the cycle length of i
+ */
+int collatz_cycle_length (int i);
+
 // -------------
 // collatz_print
 // -------------
@@ -114,7 +124,7 @@ std::pair<int, int> collatz_read (std::istream& r) {
 
 int collatz_eval (int i, int j) {
 
-    int c, x, min, max;
+    int c, min, max;
     int max_c = 0;
     
     max = i < j ? j : i;
@@ -125,29 +135,38 @@ int collatz_eval (int i, int j) {
   
     for(; min <= max; min++)
     {
-		x = min;
-		c = 1;
-      
-		while(x != 1)
-		{
-			if(x % 2 == 0)
-			x = x / 2;
-		else
-			x = 3 * x + 1;
-	
-		c++;
+		c = collatz_cycle_length(min);
+		
+		assert(c > 0);
+		
+		if(c > max_c)
+			max_c = c;
 	}
-      
-	assert(c > 0);
-
-	if(c > max_c)
-		max_c = c;
-      
-    }
     
     assert(max_c > 0);
     
-    return max_c;}
+    return max_c;
+}
+
+// ------------
+// collatz_cycle_length
+// ------------
+
+int collatz_cycle_length (int i) {
+	
+	int c = 1;
+	
+	while(i != 1)
+	{
+		if(i % 2 == 0)
+			i = i / 2;
+		else
+			i = 3 * i + 1;
+		c++;
+	}
+	
+	return c;
+}
 
 // -------------
 // collatz_print
