@@ -32,8 +32,41 @@ std::pair<int, int> collatz_read (std::istream& r) {
 // ------------
 
 int collatz_eval (int i, int j) {
-    // <your code>
-    return 1;}
+
+    int c, x, min, max;
+    int max_c = 0;
+    
+    max = i < j ? j : i;
+    min = i < j ? i : j;
+    
+    assert(max < 1000000);
+    assert(min > 0);
+  
+    for(; min <= max; min++)
+    {
+      x = min;
+      c = 1;
+      
+      while(x != 1)
+      {
+	if(x % 2 == 0)
+	  x = x / 2;
+	else
+	  x = 3 * x + 1;
+	
+	c++;
+      }
+      
+      assert(c > 0);
+      
+      if(c > max_c)
+	max_c = c;
+      
+    }
+    
+    assert(max_c > 0);
+    
+    return max_c;}
 
 // -------------
 // collatz_print
