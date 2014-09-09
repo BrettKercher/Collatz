@@ -61,17 +61,22 @@ int collatz_eval (int i, int j) {
 // collatz_cycle_length
 // ------------
 
-int collatz_cycle_length (int i) {
+int collatz_cycle_length (int n) {
 	
 	int c = 1;
 	
-	while(i != 1)
+	while(n != 1)
 	{
-		if(i % 2 == 0)
-			i = i / 2;
+		if(n % 2 == 0)
+		{
+			n = n >> 1;
+			c++;
+		}
 		else
-			i = 3 * i + 1;
-		c++;
+		{
+			n = n + (n >> 1) + 1;
+			c+=2; //Add 2 to cycle length, since the above is doing (3n+1)/2, ie, the next two numbers in the cycle
+		}
 	}
 	
 	return c;
