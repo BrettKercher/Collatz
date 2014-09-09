@@ -44,23 +44,23 @@ int collatz_eval (int i, int j) {
   
     for(; min <= max; min++)
     {
-      x = min;
-      c = 1;
+		x = min;
+		c = 1;
       
-      while(x != 1)
-      {
-	if(x % 2 == 0)
-	  x = x / 2;
-	else
-	  x = 3 * x + 1;
+		while(x != 1)
+		{
+			if(x % 2 == 0)
+			x = x / 2;
+		else
+			x = 3 * x + 1;
 	
-	c++;
-      }
+		c++;
+	}
       
-      assert(c > 0);
-      
-      if(c > max_c)
-	max_c = c;
+	assert(c > 0);
+
+	if(c > max_c)
+		max_c = c;
       
     }
     
