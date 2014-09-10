@@ -1,0 +1,146 @@
+commit 3f50192d8db72bf60fad951f5da9a2a77e2140c8
+Author: Brett Kercher <brettkercher@utexas.edu>
+Date:   Wed Sep 10 18:22:44 2014 -0500
+
+    Added doxygen documentation. closes #20
+
+commit 6f40cd21b098f8dedb576879f8a280dba6369f78
+Author: Brett Kercher <brettkercher@utexas.edu>
+Date:   Wed Sep 10 18:11:38 2014 -0500
+
+    Added TestCollatz.out to the repo
+
+commit 492bdfb717e855a311ebdd8a1544df524db37bca
+Author: Brett Kercher <brettkercher@utexas.edu>
+Date:   Wed Sep 10 18:09:57 2014 -0500
+
+    Removed unneccesary files
+
+commit 989b68b5d77580959160271d7a9609a6311f44b7
+Author: Brett Kercher <brettkercher@utexas.edu>
+Date:   Wed Sep 10 18:07:19 2014 -0500
+
+    Added a simple lazy cache. closes #18
+
+commit c721c289f54ab52aab396e06a8ef2c8408cac856
+Author: Brett Kercher <brettkercher@utexas.edu>
+Date:   Wed Sep 10 15:57:14 2014 -0500
+
+    Added 1000 lines of test code. closes #15
+
+commit 50c750f66ad31a4feea2a3ff7fabc9ea4fa0534e
+Author: Brett Kercher <brettkercher@utexas.edu>
+Date:   Wed Sep 10 15:55:39 2014 -0500
+
+    Added several more Unit Tests to TestCollatz.c++. closes #9
+
+commit b9c916b3e5a3cbb2c624eb14e680c8cf6d1f69b5
+Author: Brett Kercher <brettkercher@utexas.edu>
+Date:   Wed Sep 10 13:33:04 2014 -0500
+
+    Update UVaCollatz with the most recent changes
+
+commit ac6bfc09268436f9c8c622dfb74dac678143dbb6
+Author: Brett Kercher <brettkercher@utexas.edu>
+Date:   Wed Sep 10 13:28:07 2014 -0500
+
+    Added more basic optimizations. closes #27
+
+commit f5ffa2ed7d26d2d2f18692d461f597331ffa5a9a
+Author: Brett Kercher <brettkercher@utexas.edu>
+Date:   Tue Sep 9 16:44:27 2014 -0500
+
+    Changed the way n/2 and 3n+1 were calculated by incorporating bitwise functions. closes #25
+
+commit 5336b2ecf1f46b88e191c951a8bf0dffcc31909f
+Author: Brett Kercher <brettkercher@utexas.edu>
+Date:   Tue Sep 9 16:32:51 2014 -0500
+
+    Added a helper function in collatz_eval called collatz_cycle_length, which calculates the cycle length of a given number. closes #26
+
+commit 883e827b9ac37f211c0a5f5e1cd44a878cf353c5
+Author: Brett Kercher <brettkercher@utexas.edu>
+Date:   Tue Sep 9 15:54:49 2014 -0500
+
+    Actually added UVaCollatz.c++ to the repo
+
+commit 9b0fbf15ca98822ba8921f61c8fc44cdc01d60ab
+Author: Brett Kercher <brettkercher@utexas.edu>
+Date:   Tue Sep 9 15:53:14 2014 -0500
+
+    Merged Collatz.c++, Collatz.h, and RunCollatz.c++ into UVaCollatz.c++, submitted to UVa, and was accepted
+
+commit f36f0cc6c5940527bb49c5ecea023b9a096e4c05
+Author: Brett Kercher <brettkercher@utexas.edu>
+Date:   Tue Sep 9 15:23:04 2014 -0500
+
+    Implemented a very simple implementation of the 3n+1 problem in Collatz.c++
+
+commit 06e3cd6d4b9dca344356182fe2c5979b4a7aed76
+Author: Brett Kercher <brettkercher@utexas.edu>
+Date:   Tue Sep 9 14:44:21 2014 -0500
+
+    Removed gitignore.gitignore
+
+commit 5ab5e7c166a7333b11bca51cd00ecbe458b9652b
+Merge: 8b39dc0 c96ada5
+Author: Brett Kercher <brettkercher@utexas.edu>
+Date:   Tue Sep 9 14:39:49 2014 -0500
+
+    Merge branch 'master' of github.com:brettkercher/cs371p-collatz
+    
+    Fixed gitignore issues.
+
+commit 8b39dc002b69540af26022548ea8a40c7f590219
+Author: Brett Kercher <brettkercher@utexas.edu>
+Date:   Tue Sep 9 14:38:40 2014 -0500
+
+    Changed gitignore to .gitignore for real this time, hopefully
+
+commit c96ada563423b93699fc0eeaf90b5ef4aea6a2d3
+Author: Brett Kercher <brettkercher@utexas.edu>
+Date:   Tue Sep 9 14:34:38 2014 -0500
+
+    Delete TestCollatz.gcno
+
+commit 277ad160b0791a9cd19613f5296d2f0bcda33225
+Author: Brett Kercher <brettkercher@utexas.edu>
+Date:   Tue Sep 9 14:34:33 2014 -0500
+
+    Delete TestCollatz.gcda
+
+commit 52eca8117a6063b7cc81f0d324881be59a8c8da6
+Author: Brett Kercher <brettkercher@utexas.edu>
+Date:   Tue Sep 9 14:34:27 2014 -0500
+
+    Delete Collatz.gcno
+
+commit 44e9dd9a116de577b08c4928fcab1d178c5669c8
+Author: Brett Kercher <brettkercher@utexas.edu>
+Date:   Tue Sep 9 14:34:19 2014 -0500
+
+    Delete Collatz.gcda
+
+commit 46eaf77ea88576f8b86415567b336eb56afcfa2c
+Author: Brett Kercher <brettkercher@utexas.edu>
+Date:   Tue Sep 9 14:27:34 2014 -0500
+
+    Fixed the given unit tests
+
+commit f2ce741e58f941c730684f301c114bf43ff5d9b5
+Author: Brett Kercher <brettkercher@utexas.edu>
+Date:   Tue Sep 9 13:44:12 2014 -0500
+
+    Add initial Collatz files from public repo
+
+commit 40ec830bd2852980976d3b1303e7dcfba28af65e
+Author: Brett Kercher <brettkercher@utexas.edu>
+Date:   Fri Sep 5 12:33:35 2014 -0500
+
+    first commit
+
+commit 9e98aa3eb02ac9aa0ffe731364bac550eabfabca
+Author: Brett Kercher <brettkercher@utexas.edu>
+Date:   Thu Sep 4 11:46:26 2014 -0500
+
+    first commit
