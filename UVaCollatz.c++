@@ -130,6 +130,11 @@ int collatz_eval (int i, int j) {
     max = i < j ? j : i;
     min = i < j ? i : j;
     
+	while(min < (max / 2)) 
+	{
+		min++;
+	}
+	
     assert(max < 1000000);
     assert(min > 0);
   
