@@ -152,7 +152,7 @@ int collatz_eval (int i, int j) {
 // collatz_cycle_length
 // ------------
 
-int collatz_cycle_length (int i) {
+int collatz_cycle_length (int n) {
 	
 	int c = 1;
 	
