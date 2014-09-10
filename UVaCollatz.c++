@@ -100,6 +100,8 @@ void collatz_solve (std::istream& r, std::ostream& w);
 // main
 // ----
 
+int cache[1000000] = {0};
+
 int main () {
     using namespace std;
     collatz_solve(cin, cout);
@@ -160,6 +162,10 @@ int collatz_eval (int i, int j) {
 int collatz_cycle_length (int n) {
 	
 	int c = 1;
+	int x = n;
+	
+	if(cache[n] != 0)
+		return cache[n];
 	
 	while(n != 1)
 	{
@@ -174,6 +180,8 @@ int collatz_cycle_length (int n) {
 			c+=2; //Add 2 to cycle length, since the above is doing (3n+1)/2, ie, the next two numbers in the cycle
 		}
 	}
+	
+	cache[x] = c;
 	
 	return c;
 }
